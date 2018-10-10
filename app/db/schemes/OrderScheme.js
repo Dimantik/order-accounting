@@ -9,7 +9,7 @@ const orderScheme = new Schema({
     price: { type: Number },
     executorPay: { type: Number },
     dateAdded: { type: Date, default: Date.now },
-    dateAdded: { type: Date }
+    dateFinished: { type: Date }
 });
 
 module.exports = orderScheme;
