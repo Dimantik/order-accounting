@@ -5,6 +5,7 @@ exports.addOrder = (req, res) => {
 
     let order = new Order({
         uuid: body.uuid,
+        language: body.language,
         executorName: body.executorName,
         customerName: body.customerName,
         price: body.price,
@@ -37,6 +38,7 @@ exports.replaceOrder = (req, res) => {
 
     let order = {
         uuid: body.uuid,
+        language: body.language,
         executorName: body.executorName,
         customerName: body.customerName,
         price: body.price,
